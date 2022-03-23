@@ -1,12 +1,16 @@
 // Variables
-$ellipse1: '../../assets/images/ellipse-1.svg';
-$ellipse2: '../../assets/images/ellipse-2.svg';
-$fifty59: '../../assets/images/59FIFTY.png';
-$fifty59-2: '../../assets/images/59FIFTY_2.png';
-$fifty59-3: '../../assets/images/59FIFTY_3.png';
+$ellipse1: "../../assets/images/ellipse-1.svg";
+$ellipse2: "../../assets/images/ellipse-2.svg";
+$fifty59: "../../assets/images/59FIFTY.png";
+$fifty59-2: "../../assets/images/59FIFTY_2.png";
+$fifty59-3: "../../assets/images/59FIFTY_3.png";
 
 .home-banner {
-  background: linear-gradient(90.87deg, #F8F7F7 0.69%, rgba(227, 227, 227, 0.56) 98.66%);
+  background: linear-gradient(
+    90.87deg,
+    #f8f7f7 0.69%,
+    rgba(227, 227, 227, 0.56) 98.66%
+  );
   position: relative;
   overflow: hidden;
   z-index: -2;
@@ -19,7 +23,8 @@ $fifty59-3: '../../assets/images/59FIFTY_3.png';
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url($fifty59) no-repeat 56% 1%, url($ellipse1) no-repeat top center;
+    background: url($fifty59) no-repeat 56% 1%,
+      url($ellipse1) no-repeat top center;
   }
 
   &::after {
@@ -29,7 +34,9 @@ $fifty59-3: '../../assets/images/59FIFTY_3.png';
     bottom: 0%;
     width: 100%;
     height: 100%;
-    background: url($fifty59-2) no-repeat 0% 60%/35%, url($fifty59-3) no-repeat 47% 0%, url($ellipse2) no-repeat 50% 90%;
+    background: url($fifty59-2) no-repeat 0% 60%/35%,
+      url($fifty59-3) no-repeat 47% 0%, url($ellipse2) no-repeat 50% 90%;
+    z-index: -1;
   }
 }
 
@@ -44,7 +51,7 @@ $fifty59-3: '../../assets/images/59FIFTY_3.png';
   font-weight: bold;
   font-size: 96px;
   line-height: 117px;
-  color: #070D3F;
+  color: #070d3f;
   z-index: 100;
 }
 
@@ -59,3 +66,10 @@ $fifty59-3: '../../assets/images/59FIFTY_3.png';
 .home-banner__btn {
   margin-bottom: 40px;
 }
+
+// .home-banner__navlink {
+//   color: #000;
+//   &:hover {
+//     color: #fff;
+//   }
+// }

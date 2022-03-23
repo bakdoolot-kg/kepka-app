@@ -14,9 +14,9 @@ const Basket = () => {
       }}
     >
       <IconButton
-        disableTouchRipple
         disableFocusRipple
-        style={{ width: 10 }}
+        centerRipple
+        style={{ width: 65, height: 65 }}
         size="large"
         sx={{
           ml: { xl: 3, lg: 3 },

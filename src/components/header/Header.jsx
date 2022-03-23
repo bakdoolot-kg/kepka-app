@@ -51,7 +51,7 @@ function Header() {
         }}
       >
         <Toolbar disableGutters>
-          <IconButton sx={{}}>
+          <IconButton>
             <NavLink to="/">
               <img className="logo-kepka" src={logoKepka2} alt="logo" />
             </NavLink>

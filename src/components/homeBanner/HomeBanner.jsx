@@ -125,26 +125,26 @@ const HomeBanner = () => {
           <Button
             variant="contained"
             sx={{
-              fontSize: { sm: "11px", md: "14px" },
+              fontSize: { sm: "11px", md: "14px", xl: "18px" },
               borderRadius: "20px",
               backgroundColor: "#FDDB16",
               color: "#000",
               boxShadow: "none",
+              py: { sm: "8px", md: "10px" },
+              px: { sm: "20px", md: "20px" },
               mt: { sm: "13px", md: "20px" },
               mb: { lg: "25px" },
               ":hover": {
                 color: "#fff",
                 bgcolor: "#FDDB16",
               },
+              textTransform: "capitalize",
             }}
-            to="/catalog/"
           >
             <NavLink
               to="/catalog/"
               style={{
                 color: "#000",
-                paddingTop: "10px",
-                paddingBottom: "10px",
               }}
             >
               Открыть каталог
@@ -223,6 +223,7 @@ const HomeBanner = () => {
             fontWeight: "bold",
             fontSize: { xs: "24px", md: "64px", lg: "96px" },
             color: "#070D3F",
+            textTransform: "uppercase",
           }}
         >
           New era
@@ -249,10 +250,11 @@ const HomeBanner = () => {
             color: "#000",
             backgroundColor: "#FDDB16",
             borderRadius: "20px",
+            textTransform: "capitalize",
           }}
           variant="contained"
         >
-          <NavLink to="/catalog/" style={{ color: "#000" }}>
+          <NavLink to="/catalog/" style={{ color: "#000", fontSize: "11px" }}>
             Открыть каталог
           </NavLink>
         </Button>

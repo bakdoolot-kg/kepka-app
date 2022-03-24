@@ -143,7 +143,8 @@
 }
 .end__footer .links img:hover {
   background-color: #fddb16;
-  border: 1.5px solid #0a142f;
+  /* border: 1.5px solid #0A142F; */
   border-radius: 50%;
   cursor: pointer;
+  transform: scale(1);
 }

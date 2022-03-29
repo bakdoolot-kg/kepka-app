@@ -9,29 +9,30 @@ const Footer = () => {
   return (
     <div className="footer">
         <div className="main_title">
-          <h1>CUSTOM CUPS в цифрах</h1>
+          <h1>CUSTOM CAPS в цифрах</h1>
           <div className="texts">
-            <div className="second_title">
+            <div className="info_title">
               <p className="number">12000</p>
               <p className="text">проданных кепок</p>
             </div>
-            <div className="third_title">
-              <p className="number_2">9</p>
-              <p className="text_2">лет на рынке</p>
+            <div className="info_title">
+              <p className="number">9</p>
+              <p className="text">лет на рынке</p>
             </div>
-            <div className="fourth_title">
-              <p className="number_3">8500</p>
-              <p className="text_3">довольных клиентов</p>
+            <div className="info_title">
+              <p className="number">8500</p>
+              <p className="text">довольных клиентов</p>
             </div>
           </div>
           <div className="line"></div>
           <div className="end__footer">
             <div className="custom">
-              <img src={custom} with="53" height="53" />
-              <span>
-                <h5>Custom caps</h5>
-                <p>Магазин кепок</p>
-              </span>
+              <img src={custom} width="63" height="53" />
+              <div className="cap__store">
+                <p className="custom__caps">Custom caps</p>
+                <p className="end__store">Магазин кепок</p>
+              </div>
+
             </div>
             <div className="copyright">
               <p>© Copyright 2019 - Lift Media</p>

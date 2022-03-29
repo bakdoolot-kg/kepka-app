@@ -1,23 +1,22 @@
 
 
 .footer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
   /* background-color: rgb(247, 241, 230); */
 }
 .texts {
   display: flex;
+  margin-top: 57px;
 }
-.second_title {
-  display: flex;
-}
+
 .main_title h1 {
-  margin-top: 144px;
 }
 
 .number {
-  margin-top: 42px;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -25,59 +24,27 @@
   color: #fddb16;
 }
 .text {
-  margin-top: 57px;
   margin-left: 10px;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+
 }
-.third_title {
+.info_title {
   display: flex;
-  margin: -5px 41px 10px 41px;
-}
-.number_2 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 59px;
-  color: #fddb16;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 50px;
+
 }
 
-.text_2 {
-  margin-left: 10px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  margin-top: 62px;
-}
 
-.fourth_title {
-  display: flex;
-  margin: -5px 0 10px 0;
-}
 
-.number_3 {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 59px;
-  color: #fddb16;
-}
-
-.text_3 {
-  margin-left: 10px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  margin-top: 62px;
-}
 
 .line {
   height: 1px;
-  width: 1080px;
+  width: auto;
   border-radius: 0px;
   background: #0a142f;
   opacity: 0.06;
@@ -91,16 +58,18 @@
   justify-content: space-between;
 }
 
-.end__footer h5 {
+.end__footer .custom__caps {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.end__footer p {
+.end__footer .end__store {
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
@@ -121,14 +90,12 @@
 }
 
 .end__footer .copyright {
-  margin-top: 110px;
-  margin-left: 80px;
+  margin-top: 60px;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
-  text-align: center;
   color: #0a142f;
   mix-blend-mode: normal;
   opacity: 0.65;
@@ -142,4 +109,10 @@
   border-radius: 50%;
   cursor: pointer;
   transform: scale(1);
+}
+.end__footer .custom {
+  display: flex;
+}
+.end__footer .cap__store{
+  margin-left: 8px;
 }

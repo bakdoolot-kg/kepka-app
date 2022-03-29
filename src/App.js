@@ -1,14 +1,12 @@
-import React from "react";
-import CustomRouter from "./CustomRouter";
-import Footer from "./components/footer";
-
+import React from 'react'
+import CustomRouter from './CustomRouter'
+import 'antd/dist/antd.css';
 import "./app.scss";
 
 function App() {
   return (
     <div>
       <CustomRouter />
-      <Footer />
     </div>
   );
 }

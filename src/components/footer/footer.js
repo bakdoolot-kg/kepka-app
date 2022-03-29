@@ -8,23 +8,7 @@ import twitter from "./images/Twitter.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="main_footer">
         <div className="main_title">
-          <h1>CUSTOM CUPS в цифрах</h1>
-          <div className="texts">
-            <div className="second_title">
-              <p className="number">12000</p>
-              <p className="text">проданных кепок</p>
-            </div>
-            <div className="third_title">
-              <p className="number_2">9</p>
-              <p className="text_2">лет на рынке</p>
-            </div>
-            <div className="fourth_title">
-              <p className="number_3">8500</p>
-              <p className="text_3">довольных клиентов</p>
-            </div>
-          </div>
           <div className="line"></div>
           <div className="end__footer">
             <div className="custom">
@@ -45,7 +29,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

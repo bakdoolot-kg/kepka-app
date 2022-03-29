@@ -6,7 +6,6 @@ import kepka3 from "./images/12731514_59FIFTY_5950LIFEQTSP21003CHIWHIOTC_CHIWHI_
 
 function ProductDetails() {
   return (
-    <div>
       <div className="all_product_details">
         <div className="product-details">
           <div className="img">
@@ -42,10 +41,6 @@ function ProductDetails() {
           </div>
         </div>
       </div>
-      <div className="top__select">
-        <h1>Top Select</h1>
-      </div>
-    </div>
   );
 }
 

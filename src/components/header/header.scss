@@ -122,3 +122,7 @@ $loupeIcon: "../../assets/images/loupe-icon.svg";
     }
   }
 }
+
+.active-navlink {
+  @include custom-underline(#555252, #555252, #555252, #555252, #fff);
+}

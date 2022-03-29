@@ -8,7 +8,6 @@ import twitter from "./images/Twitter.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="main_footer">
         <div className="main_title">
           <h1>CUSTOM CUPS в цифрах</h1>
           <div className="texts">
@@ -44,7 +43,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

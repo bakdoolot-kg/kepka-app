@@ -10,7 +10,9 @@
   padding: 5px;
   margin-right: -50px;
 }
-
+.details p{
+  margin-bottom: 0em;
+}
 .all_product_details {
   display: flex;
   margin-top: 40px;

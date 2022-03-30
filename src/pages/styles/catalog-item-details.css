@@ -1,0 +1,221 @@
+.catalog-page {
+    width: inherit;
+    margin-left: 110px;
+}
+
+.item-details {
+    display: flex;
+    width: inherit;
+    margin: auto;
+}
+
+.left {
+    width: 40%;
+}
+.right {
+    width: auto;
+    margin-left: 80px;
+}
+.big-img {
+    width: 520px;
+    height: 410px;
+    margin: 20px 20px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.big-img img {
+    width: inherit;
+}
+.images {
+    display: flex;
+    justify-self: space-between;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.small-img {
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    height:  auto;
+
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+}
+.small-img img {
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.small-img:hover img {
+    transform: scale(1.2);
+}
+.url {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-left: 20px;
+}
+.urlCurr {
+    color: #FDDB16;
+}
+.pname {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    width: inherit;
+    height: auto;
+    text-align: justify;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 29px;
+
+    color: #000000;
+}
+.price {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+
+    width: 163px;
+    height: 44px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    /*font-weight: 600;
+    font-size: 36px;*/
+    line-height: 44px;
+    color: #FDDB16;
+}
+.size {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.size p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.sizeText {
+    margin: 2px;
+    position: relative;
+    width: 15px;
+    height: 29px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #847E7E;
+    padding: 0 18px;
+}
+.psize {
+    width: 60px;
+    height: 30px;
+    /*color: #000;*/
+    margin: 0 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+.price.active {
+    border-width: 1.5px;
+    color: #ff5e00;
+    font-weight: 500;
+}
+.quantity p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn-box {
+    margin-top: 30px;
+}
+.btn-box button {
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #000;
+}
+.buy {
+    background-color: #FDDB16;
+}
+.buy:hover {
+    background-color: #ffe449;
+}
+
+#boldPname {
+    font-weight: 700;
+}
+
+
+
+
+
+.number {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+}
+.number input[type="number"] {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.number-minus {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-right: 1px solid #ddd;
+	font-size: 16px;
+	font-weight: 600;
+}
+.number-plus {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-left: 1px solid #ddd;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+

@@ -102,11 +102,12 @@
 }
 .end__footer .links img {
   margin: 15px 15px 0 0;
+  border-radius: 50%;
+  transition:all 0.3s;
 }
 .end__footer .links img:hover {
   background-color: #fddb16;
   /* border: 1.5px solid #0A142F; */
-  border-radius: 50%;
   cursor: pointer;
   transform: scale(1);
 }

@@ -1,15 +1,10 @@
-import React from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Anchor, Row, Col, Pagination, Table} from 'antd';
 import './catalog.css'
 import vector from './catalog-img/Vector.svg'
-import {itemsCatalog} from "./items-catalog";
 import Footer from "../footer";
-
+import {Consumer} from "../caps-context";
 const {Link} = Anchor;
-
-{
-    itemsCatalog.map((obj) => <li key={obj.id}>{obj.name}</li>)
-}
 
 const Navigation = () => {
     return (
@@ -22,23 +17,41 @@ const Navigation = () => {
 }
 
 const Items = () => {
+    const [data, setData] = useState({
+    })
+
+    const caps = useContext(Consumer)
+
+    const getCaps = () => {
+
+        caps.getAllCaps().then(data=> {
+            setData({...data})
+        }).catch(error=>{
+            setData({...data})
+        })
+    }
+    useEffect(()=>{
+        getCaps()
+    }, [])
+    const itemCatalog = data.results
+    console.log(itemCatalog)
     return (
-        <>
+        <div>
             <Row gutter={[16, 16]} id="catalog">
                 {
-                    itemsCatalog.map((data) => {
+                    itemCatalog?.map((data) => {
                         return (
-                            <Col className="gutter-row" span={6}>
+                            <Col className="gutter-row" span={6} key={data.id}>
                                 <div className="block">
                                     <div className="block__img">
-                                        <img src={data.image.itemCap} width={236} height={173} alt=""/>
+                                        <img src={data.capsimage[0].image} width={236} height={173} alt=""/>
                                     </div>
                                     <div className="block__title">
                                         <div className="title__des">
                                             <h3 className="title__name"> {data.name} </h3>
-                                            <p>{data.series}</p>
+                                            <p>{data.brand}</p>
                                         </div>
-                                        <h3 className="price">{data.price}</h3>
+                                        <a className="price">{data.price}</a>
                                     </div>
                                 </div>
                             </Col>
@@ -46,7 +59,7 @@ const Items = () => {
                     })
                 }
             </Row>
-        </>
+        </div>
     );
 };
 

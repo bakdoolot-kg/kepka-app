@@ -7,8 +7,16 @@
   border-radius: 15px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 5px;
+  transition:all 0.3s;
   margin-right: -50px;
+  cursor: pointer;
+}
+
+.product-details img:hover{
+  width:132px;
+  height: 132px;
 }
 .details p{
   margin-bottom: 0em;

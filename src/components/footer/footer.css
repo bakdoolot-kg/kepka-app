@@ -104,12 +104,16 @@
   margin: 15px 15px 0 0;
   border-radius: 50%;
   transition:all 0.3s;
+  border: 1.5px solid #fff;
+
 }
 .end__footer .links img:hover {
   background-color: #fddb16;
-  /* border: 1.5px solid #0A142F; */
   cursor: pointer;
   transform: scale(1);
+  border: 1.5px solid #0A142F;
+
+
 }
 .end__footer .custom {
   display: flex;

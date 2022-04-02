@@ -12,11 +12,11 @@ const Footer = () => {
           <div className="line"></div>
           <div className="end__footer">
             <div className="custom">
-              <img src={custom} with="53" height="53" />
-              <span>
-                <h5>Custom caps</h5>
-                <p>Магазин кепок</p>
-              </span>
+              <img src={custom} width="63" height="53" />
+              <div className="cap__store">
+                <p className="custom__caps">Custom caps</p>
+                <p className="end__store">Магазин кепок</p>
+              </div>
             </div>
             <div className="copyright">
               <p>© Copyright 2019 - Lift Media</p>
@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-              </div>
+      </div>
   );
 };
 

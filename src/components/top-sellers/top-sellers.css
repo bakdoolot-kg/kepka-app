@@ -1,0 +1,26 @@
+.top-sellers{
+    margin: 80px 0;
+}
+
+.container .title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+    color: #000000;
+
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.dot{
+    font-size: 20px;
+    color: #FDDB16;
+}
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+

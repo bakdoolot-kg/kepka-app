@@ -1,0 +1,275 @@
+.cap-info {
+    width: auto;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.item-details {
+    width: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.left {
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.big-img {
+    width: 520px;
+    height: 410px;
+    margin: 20px 20px;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.big-img img {
+    width: inherit;
+    padding: 20px;
+}
+.images {
+    display: flex;
+    justify-self: space-between;
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.small-img {
+    margin: 5px;
+    padding: 10px;
+    width: 120px;
+    height:  auto;
+
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 15px;
+}
+.small-img img {
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.small-img:hover img {
+    transform: scale(1.2);
+}
+.url {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin-left: 20px;
+}
+.url .url-text{
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #847E7E;
+    font-family: 'Montserrat';
+}
+.urlCurr {
+    margin-left: 5px;
+    color: #FDDB16;
+}
+.pname {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    width: inherit;
+    height: auto;
+    text-align: justify;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 29px;
+
+    color: #000000;
+}
+.buy-info{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.buy-info .price {
+
+    font-size: 38px;
+    font-weight: 500;
+
+    height: 44px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    /*font-weight: 600;
+    font-size: 36px;*/
+    line-height: 44px;
+    color: #FDDB16;
+}
+.size-count-change{
+    margin-right: 100px;
+}
+.size {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.size p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.psize {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #847E7E;
+    width: 70px;
+    height: 48px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.size .active{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    width: 70px;
+    height: 48px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: #000;
+    border: 1px solid #000;
+}
+.price:active {
+    border-width: 1.5px;
+    color: #ff5e00;
+    font-weight: 500;
+}
+.quantity p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.btn-box {
+    margin-top: 30px;
+}
+.btn-box button {
+    font-size: 18px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 500;
+}
+.buy {
+    border-radius: 15px;
+    width: 270px;
+    height: 70px;
+    background-color: #FDDB16;
+}
+.buy:hover {
+    background-color: #ffe449;
+}
+
+#boldPname {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+
+
+
+.quantity .number {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+    border-radius: 20px;
+}
+.number input[type="number"] {
+    font-family: 'Montserrat';
+    opacity: 0.5;
+    color: #000;
+    font-size: 24px;
+    border-radius: 10px;
+	display: block;
+	height: 48px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+    border: 1px solid #847E7E;
+    box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.quantity .number-minus {
+    border-radius: 10px;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+    background-color: #fff;
+    font-size: 16px;
+    z-index: 1;
+	font-weight: 600;
+    cursor: pointer;
+}
+.quantity .number-plus {
+    border-radius: 10px;
+	position: absolute;
+    background-color: #fff;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	font-size: 16px;
+	font-weight: 600;
+    z-index: 1;
+    cursor: pointer;
+}
+.added-to-cart{
+    display: flex;
+    justify-content: center;
+}
+.added-to-cart .buy{
+    min-width: 450px;
+    color: #847E7E;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    border: none;
+}
+
+
+
+
+
+
+

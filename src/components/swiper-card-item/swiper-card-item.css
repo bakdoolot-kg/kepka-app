@@ -1,0 +1,40 @@
+.swiper-card img{
+    width: 218px;
+    height: 218px;
+}
+
+.swiper-card{
+    cursor: pointer;
+}
+.card-img{
+    display: block;
+    margin: 0 auto 40px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+.kepka-brand{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.26px;
+    color:#847E7E;
+}
+
+.kepka-model{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.07px;
+    letter-spacing: -1px;
+    color: #847E7E;
+
+    margin: 11px 0;
+}
+
+.kepka-price{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.94px;
+    color: #FDDB16;
+}

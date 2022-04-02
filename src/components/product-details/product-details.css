@@ -9,14 +9,12 @@
   justify-content: space-around;
   align-items: center;
   padding: 5px;
-  transition:all 0.3s;
-  margin-right: -50px;
+  transition: all 0.3s;
   cursor: pointer;
 }
 
-.product-details img:hover{
-  width:132px;
-  height: 132px;
+.product-details:hover img{
+  transform: scale(1.1);
 }
 .details p{
   margin-bottom: 0em;

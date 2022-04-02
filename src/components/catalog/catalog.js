@@ -6,10 +6,11 @@ import Footer from "../footer";
 import {Consumer} from "../caps-context";
 const {Link} = Anchor;
 
+
 const Navigation = () => {
     return (
         <Anchor className="navigation">
-            <Link href='#banner' title='Home'/>
+            <Link title='Home'/>
             <img src={vector} alt=""/>
             <Link href="#catalog" title='Каталог'/>
         </Anchor>

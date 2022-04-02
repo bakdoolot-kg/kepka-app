@@ -1,38 +1,188 @@
-
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 15px;
-}
-@media (max-width: 1024px) {
-  .footer {
-    width: 1200px;
-    padding: 15px;
-  }
-}
-@media (max-width: 1010px) {
-  .footer {
-    max-width: 768px;
-    display: flex;
-    justify-content: center;
-    }
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .links img {
+@media (max-width: 1340px) {
+  .end__footer {
+    width: 1000px;
+    margin-left: -120px; 
+  }
+  .links {
+    margin-left: -250px;
+  }
+}
+@media (max-width: 1200px) {
+  .custom {
+    padding: 0 15px;
+    width: 700px;
+
+  }
+  .main_title {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .main_title .line {
+    width: 950px;
+    margin: 0 auto;
+    /* margin-right: 50px; */
+  }
+}
+@media (max-width: 1100px) {
+  .custom {
+    padding: 0 15px;
+  }
+  .end__footer {
+    margin-left: 10px;
+  }
+  .main_title {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1050px) {
+  .links {
+    margin-left: -320px;
+  }
+}
+@media (max-width: 1000px) {
+  .end__footer {
+    margin-left: 50px;
+  }
+  .links {
+    margin-left: -500px;
+    margin-right: 100px;
+  }
+  .main_title .line {
+    width: 930px;
+  }
+}
+@media (max-width: 900px) {
+  .end__footer {
+    margin-left: 150px;
+  }
+  .links {
+    margin-left: -526px;
+    margin-right: 500px;
+  }
+  .copyright {
+    transform: translate(-160px, 0)
+  }
+  .main_title .line {
+    margin-left: -5px;
+  }
+}
+@media (max-width: 800px) {
+  .main_title .line {
+    width: 730px;
+  }
+  .end__footer .links {
     display: none;
   }
 }
+@media (min-width: 800px) {
+  .custom {
+    margin-left: 50px;
+    margin: 0 auto;
+    width: 450px;
+  }
+}
+@media (max-width: 799px) {
+  .copyright {
+    transform: translate(-150px, 0)
+  }
+}
+@media (max-width: 768px) {
+  .custom {
+    min-width: 480px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .custom img {
+    margin-left: -830px;
+  }
+  .custom span {
+    margin-left: 50px;
+  }
+  .main_title {
+    max-width: 768px;
+  }
+  .copyright {
+    transform: translate(-350px, 0);
+  }
+}
+@media (max-width: 700px) {
+  .main_title .line {
+    width: 630px;
+  }
+}
+@media (max-width: 600px) {
+  .main_title .line {
+    width: 530px;
+  }
+}
+@media (max-width: 500px) {
+  .main_title .line {
+    width: 430px;
+  }
+}
+@media (max-width: 400px) {
+  .main_title .line {
+    width: 330px;
+  }
+}
+@media (max-width: 320px) {
+  .custom {
+    width: 320px;
+    text-align: center;
+    margin-left: -40px
+  }
+  .copyright {
+    text-align: center;
+    width: 320px;
+    margin-left: -20px;
+  }
+  .main_title .line {
+    width: 450px;
 
+  }
+}
+@media (max-width: 425px) {
+  .copyright {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-490px, 0);
+  }
+  .custom {
+    transform: translate(120px, 0)
+  }
+} 
+
+.end__footer .custom {
+  width: 1170px;
+  margin: 0 auto; 
+}
+.custom span p,h5 {
+  width: 100px;
+}
 .line {
   height: 1px;
-  width: 1080px;
+  width: 1170px;
   border-radius: 0px;
   background: #0a142f;
   opacity: 0.06;
   border: 1px solid #0a142f;
   margin-top: 72px;
+  margin: 0 auto;
 }
 
 .end__footer {
@@ -46,6 +196,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: 15px;
+  margin: 23px 0 20px 0;
   text-transform: uppercase;
   color: #000000;
 }
@@ -71,8 +222,10 @@
 }
 
 .end__footer .copyright {
-  margin-top: 110px;
-  margin-left: 80px;
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 300;
@@ -83,8 +236,15 @@
   mix-blend-mode: normal;
   opacity: 0.65;
 }
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
 .end__footer .links img {
   margin: 15px 15px 0 0;
+  width: 35px;
+  height: 35px;
 }
 .end__footer .links img:hover {
   background-color: #fddb16;

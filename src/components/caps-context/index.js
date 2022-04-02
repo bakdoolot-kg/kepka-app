@@ -1,4 +1,4 @@
 import React from "react";
-import {Provider, Consumer} from "./context";
+import {CapContext} from "./context";
 
-export {Provider, Consumer}
+export {CapContext}

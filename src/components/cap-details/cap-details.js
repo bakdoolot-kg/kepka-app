@@ -1,37 +1,58 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import './catalog-item-details.css'
 import {productSizes, imgUrls} from "./cap-details-items";
 import TopSellers from "../top-sellers";
 import {NavLink} from "react-router-dom";
+import {CapContext} from "../caps-context";
 
-const changeID = (id) => {
-        let BigImg = document.querySelector('.big-img img')
-        BigImg.src = imgUrls[id].url
-    }
+    const CapDetails = ({selectedItemId}) => {
+        const [data, setData] = useState({
 
-    const elements = imgUrls.map((item) => {
-        return (
-            <div key={item.id} id={item.id} className="small-img">
-                <img src={item.url} onClick={() => changeID(item.id)} alt="small"/>
-            </div>
-        );
-    });
+        })
 
+        const caps= useContext(CapContext.Consumer)
 
+        useEffect(() => {
+            caps.getCap(selectedItemId).then(data=>{
+                setData({...data})
+            }).catch(error=>{
+                setData({...data})
+            })
+        }, [selectedItemId])
 
-    const CapDetails = () => {
+        const changeID = (id) => {
+            let BigImg = document.querySelector('.big-img img')
+            BigImg.src = data.image
+        }
+
+        const elements = imgUrls.map((item) => {
+            return (
+                <div key={item.id} id={item.id} className="small-img">
+                    <img src={data.image} onClick={() => changeID(item.id)} alt="small"/>
+                </div>
+            );
+        });
+
         const [counter, setCounter] = useState(1)
-        const [price, setPrice]= useState(3200)
         const [size, setSize] = useState(0)
         const [active, setActive]= useState('unable')
+        const [cost, setPrice]= useState(0)
+
+
+        useEffect(()=>{
+            setPrice(data.price)
+        }, [data])
+
+
         const onIncrease = () => {
             setCounter(counter+1)
-            setPrice(price+price/counter)
+            setPrice(cost+cost/counter)
         };
+
         const onDecrease = () => {
             if (counter>1){
                 setCounter(counter-1)
-                setPrice(price-price/counter)
+                setPrice(cost-cost/counter)
             }
         };
         const onSetSize =(item)=>{
@@ -55,9 +76,7 @@ const changeID = (id) => {
                 </div>
             );
         }
-        useEffect(()=>{
-            console.log(size)
-        }, [size])
+
         return (
             <div className="cap-info">
                 <div className="item-details">
@@ -74,7 +93,7 @@ const changeID = (id) => {
                             <span className='urlCurr'>Детали продукта</span>
                         </div>
                         <div className="big-img">
-                            <img src={imgUrls[0].url} alt="display"/>
+                            <img src={data.image} alt="display"/>
                         </div>
                         <div className="images">
                             {elements}
@@ -83,7 +102,7 @@ const changeID = (id) => {
                     <div className="right">
                         <div className='top-info'>
                             <div className="pname">
-                                <span id='boldPname'>New era</span><br/> black snapback 59 fifty
+                                <span id='boldPname'>{data.brand}</span><br/> {data.name}
                             </div>
                             <div className='size-count-change'>
                                 <div className="size">
@@ -99,7 +118,7 @@ const changeID = (id) => {
                             </div>
                         </div>
                         <div className="buy-info">
-                            <div className="price">{price}сом</div>
+                            <div className="price">{cost}сом</div>
                             <div className='btn-box'>
                                 <button className='buy'>Добавить в корзину</button>
                             </div>

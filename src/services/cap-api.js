@@ -27,7 +27,6 @@ export default class CapService {
     }
     _transformCap = (cap)=>{
         return{
-            id: cap.id,
             image: cap.capsimage[0].image,
             name: cap.name,
             price: cap.price,

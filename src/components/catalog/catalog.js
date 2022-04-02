@@ -3,8 +3,11 @@ import {Anchor, Row, Col, Pagination, Table} from 'antd';
 import './catalog.css'
 import vector from './catalog-img/Vector.svg'
 import Footer from "../footer";
-import {Consumer} from "../caps-context";
+import {CapContext} from "../caps-context";
+import {NavLink} from "react-router-dom";
+
 const {Link} = Anchor;
+
 
 
 const Navigation = () => {
@@ -21,7 +24,7 @@ const Items = () => {
     const [data, setData] = useState({
     })
 
-    const caps = useContext(Consumer)
+    const caps = useContext(CapContext.Consumer)
 
     const getCaps = () => {
 
@@ -35,7 +38,6 @@ const Items = () => {
         getCaps()
     }, [])
     const itemCatalog = data.results
-    console.log(itemCatalog)
     return (
         <div>
             <Row gutter={[16, 16]} id="catalog">
@@ -43,18 +45,20 @@ const Items = () => {
                     itemCatalog?.map((data) => {
                         return (
                             <Col className="gutter-row" span={6} key={data.id}>
-                                <div className="block">
-                                    <div className="block__img">
-                                        <img src={data.capsimage[0].image} width={236} height={173} alt=""/>
-                                    </div>
-                                    <div className="block__title">
-                                        <div className="title__des">
-                                            <h3 className="title__name"> {data.name} </h3>
-                                            <p>{data.brand}</p>
+                                <NavLink to={`/cap-details/${data.id}`}>
+                                    <div className="block">
+                                        <div className="block__img">
+                                            <img src={data.capsimage[0].image} width={236} height={173} alt=""/>
                                         </div>
-                                        <a className="price">{data.price}</a>
+                                        <div className="block__title">
+                                            <div className="title__des">
+                                                <h3 className="title__name"> {data.brand} </h3>
+                                                <p>{data.name}</p>
+                                            </div>
+                                            <a className="price">{data.price}</a>
+                                        </div>
                                     </div>
-                                </div>
+                                </NavLink>
                             </Col>
                         )
                     })

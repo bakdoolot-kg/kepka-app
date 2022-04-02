@@ -81,7 +81,7 @@
     width: 270px;
     height: 84px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: #FFFFFF;
     border: 1px solid rgba(196, 196, 196, 0.5);
@@ -100,6 +100,7 @@
     color: #847E7E;
 }
 .title__des p{
+    max-width: 160px;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
@@ -109,7 +110,6 @@
 }
 
 .price {
-    margin:0 0 0  55px;
     color: #FDDB16;
     font-family: 'Montserrat';
     font-style: normal;

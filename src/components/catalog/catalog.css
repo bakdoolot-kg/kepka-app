@@ -15,6 +15,10 @@
     margin-bottom: 20px;
 }
 
+.navigation a {
+    color: #847E7E;
+}
+
 .ant-anchor {
     display: flex;
 }
@@ -71,6 +75,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 .block__img {
     margin-top: 20px;
@@ -122,5 +127,7 @@
     /*height: 25px;*/
     margin: 30px 0 !important;
 }
+
+
 
 

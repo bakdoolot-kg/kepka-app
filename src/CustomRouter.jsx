@@ -12,12 +12,13 @@ import {
   AboutUsPage,
   CapDetailsPage,
 } from "./pages";
+import ScrollToTop from "./services/scroll-to-top/scroll-to-top";
 
 const CustomRouter = () => {
   return (
     <Router>
       <Header />
-
+      <ScrollToTop/>
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/catalog/" component={CatalogPage} />

@@ -1,20 +1,19 @@
-.catalog-page {
-    width: inherit;
-    margin-left: 110px;
+.cap-info {
+    width: 1600px;
+    padding: 10px;
 }
 
 .item-details {
-    display: flex;
     width: inherit;
     margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
 .left {
-    width: 40%;
 }
 .right {
-    width: auto;
-    margin-left: 80px;
 }
 .big-img {
     width: 520px;
@@ -77,7 +76,8 @@
     color: #000000;
 }
 .price {
-    font-size: 20px;
+
+    font-size: 38px;
     font-weight: 500;
     margin: 20px 0;
 
@@ -100,31 +100,37 @@
     font-size: 18px;
     font-weight: 500;
 }
-.sizeText {
-    margin: 2px;
-    position: relative;
-    width: 15px;
-    height: 29px;
 
+.psize {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 29px;
     color: #847E7E;
-    padding: 0 18px;
-}
-.psize {
-    width: 60px;
-    height: 30px;
-    /*color: #000;*/
-    margin: 0 10px;
-
+    width: 70px;
+    height: 48px;
+    margin-right: 20px;
+    cursor: pointer;
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
 }
-.price.active {
+
+.size .active{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    width: 70px;
+    height: 48px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 10px;
+    color: #000;
+    border: 1px solid #000;
+}
+.price:active {
     border-width: 1.5px;
     color: #ff5e00;
     font-weight: 500;
@@ -146,6 +152,9 @@
     color: #000;
 }
 .buy {
+    border-radius: 15px;
+    width: 270px;
+    height: 70px;
     background-color: #FDDB16;
 }
 .buy:hover {
@@ -164,15 +173,22 @@
 	display: inline-block;
 	position: relative;
 	width: 100px;
+    border-radius: 20px;
 }
 .number input[type="number"] {
+    font-family: 'Montserrat';
+    opacity: 0.5;
+    color: #000;
+    font-size: 24px;
+    border-radius: 10px;
 	display: block;
-	height: 32px;
+	height: 48px;
 	line-height: 32px;
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+    border: 1px solid #847E7E;
+    box-sizing: border-box;
 	text-align: center;
 	-moz-appearance: textfield;
 	-webkit-appearance: textfield;
@@ -183,6 +199,7 @@
 	display: none;
 }
 .number-minus {
+    border-radius: 10px;
 	position: absolute;
 	top: 1px;
 	left: 1px;
@@ -192,12 +209,16 @@
 	display: block;
 	text-align: center;
 	border: none;
-	border-right: 1px solid #ddd;
-	font-size: 16px;
+    background-color: #fff;
+    font-size: 16px;
+    z-index: 1;
 	font-weight: 600;
+    cursor: pointer;
 }
 .number-plus {
+    border-radius: 10px;
 	position: absolute;
+    background-color: #fff;
 	top: 1px;
 	right: 1px;
 	bottom: 1px;
@@ -206,9 +227,10 @@
 	display: block;
 	text-align: center;
 	border: none;
-	border-left: 1px solid #ddd;
 	font-size: 16px;
 	font-weight: 600;
+    z-index: 1;
+    cursor: pointer;
 }
 
 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../../pages/styles/catalog-item-details.css';
+import '../cap-details/catalog-item-details.css';
 
 
 const imgUrls = [

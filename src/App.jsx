@@ -1,12 +1,13 @@
 import React from 'react'
 import CustomRouter from './CustomRouter'
-
 import './app.scss'
 
-function App() {
+const App = () => {
   return (
+      <div>
       <CustomRouter />
-  );
+      </div>
+  )
 }
 
 export default App;

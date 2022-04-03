@@ -1,4 +1,5 @@
-export {default as HomePage} from './HomePage';
+// export {default as HomePage} from './HomePage';
+export {default} from './HomePage'
 export {default as CatalogPage} from './CatalogPage';
 export {default as BasketPage} from './BasketPage';
 export {default as BrandsPage} from './BrandsPage';

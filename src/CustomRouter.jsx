@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
 import {Header} from "./components"
 
 // Pages
-import {HomePage, CatalogPage, BasketPage, BrandsPage, AboutUsPage} from './pages'
+import { CatalogPage, BasketPage, BrandsPage, AboutUsPage} from './pages';
+import HomePage from './pages'
 
 const CustomRouter = () => {
   return (

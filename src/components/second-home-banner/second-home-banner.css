@@ -1,0 +1,473 @@
+.free {
+    margin-top: 100px;
+    width: 100%;
+    height: 32em;
+    overflow: hidden;
+}
+.yellow-square {
+    z-index: 1;
+    width: 100%;
+    height: 30em;
+    background-color: #FDDB16;
+    padding: 25px;
+}
+.open-catalog {
+    margin-top: 40px;
+    z-index: 30;
+    background-color: #670098;
+    border: 0;
+    size: auto;
+    padding: 15px 25px;
+    border-radius: 17px;
+}
+.open-catalog-text {
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+.supremenewera {
+    color: white;
+    line-height: 43px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.collabaration {
+    color: white;
+    font-size: 32px;
+    font-weight: 100;
+}
+.supr-collab-btn-text {
+    margin: 5% 10% 0 30%;
+    z-index: 20;
+}
+.kepka-banner {
+    width: 70%;
+    height: 70%;
+    float: right;
+    margin-top: -12%;
+}
+.circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #5b1f78;
+    float: right;
+    margin-right: 50px;
+    margin-bottom: -50px;
+}
+@media screen and (max-width: 320px) {
+    .free {
+        margin-top: 100px;
+        width: 100%;
+        height: 28em;
+        overflow: hidden;
+    }
+    .yellow-square {
+        z-index: 1;
+        width: 100%;
+        height: 26em;
+        background-color: #FDDB16;
+        padding: 25px;
+    }
+    .open-catalog {
+        margin-top: 40px;
+        z-index: 30;
+        background-color: #670098;
+        border: 0;
+        size: auto;
+        padding: 15px 25px;
+        border-radius: 17px;
+    }
+    .open-catalog-text {
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .supremenewera {
+        font-size: 28px;
+        color: white;
+        line-height: 43px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .collabaration {
+        color: white;
+        font-size: 27px;
+        font-weight: 100;
+    }
+    .supr-collab-btn-text {
+        margin: 5% 10% 0 30%;
+        z-index: 20;
+    }
+    .kepka-banner {
+        width: 80%;
+        height: 80%;
+        float: right;
+        margin-top: 5%;
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #5b1f78;
+        float: right;
+        margin-right: 25px;
+        margin-bottom: -50px;
+    }
+}
+@media screen and (min-width: 321px) {
+    .free {
+        margin-top: 100px;
+        width: 100%;
+        height: 29em;
+        overflow: hidden;
+    }
+    .yellow-square {
+        z-index: 1;
+        width: 100%;
+        height: 27em;
+        background-color: #FDDB16;
+        padding: 25px;
+    }
+    .open-catalog {
+        margin-top: 40px;
+        z-index: 30;
+        background-color: #670098;
+        border: 0;
+        size: auto;
+        padding: 15px 25px;
+        border-radius: 17px;
+    }
+    .open-catalog-text {
+        color: white;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .supremenewera {
+        color: white;
+        line-height: 43px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .collabaration {
+        color: white;
+        font-size: 32px;
+        font-weight: 100;
+    }
+    .supr-collab-btn-text {
+        margin: 5% 10% 0 30%;
+        z-index: 20;
+    }
+    .kepka-banner {
+        width: 70%;
+        height: 70%;
+        float: right;
+        margin-top: 5%;
+    }
+    .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #5b1f78;
+        float: right;
+        margin-right: 50px;
+        margin-bottom: -50px;
+    }
+}
+@media screen and (min-width: 426px) {
+    .free {
+        margin-top: 100px;
+        width: 100%;
+        height: 28em;
+        overflow: hidden;
+    }
+    .yellow-square {
+        z-index: 1;
+        width: 100%;
+        height: 26em;
+        background-color: #FDDB16;
+        padding: 25px;
+    }
+    .open-catalog {
+        margin-top: 40px;
+        z-index: 30;
+        background-color: #670098;
+        border: 0;
+        size: auto;
+        padding: 15px 25px;
+        border-radius: 17px;
+    }
+    .open-catalog-text {
+        color: white;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .supremenewera {
+        color: white;
+        line-height: 43px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .collabaration {
+        color: white;
+        font-size: 32px;
+        font-weight: 100;
+    }
+    .supr-collab-btn-text {
+        margin: 5% 10% 0 30%;
+        z-index: 20;
+    }
+    .kepka-banner {
+        width: 70%;
+        height: 70%;
+        float: right;
+        margin-top: 0;
+    }
+    .circle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #5b1f78;
+        float: right;
+        margin-right: 50px;
+        margin-bottom: -50px;
+    }
+}
+
+@media screen and (min-width: 651px) {
+    .free {
+        margin-top: 100px;
+        width: 100%;
+        height: 29em;
+        overflow: hidden;
+    }
+    .yellow-square {
+        z-index: 1;
+        width: 100%;
+        height: 27em;
+        background-color: #FDDB16;
+        padding: 25px;
+    }
+    .open-catalog {
+        margin-top: 40px;
+        z-index: 30;
+        background-color: #670098;
+        border: 0;
+        size: auto;
+        padding: 15px 25px;
+        border-radius: 17px;
+    }
+    .open-catalog-text {
+        color: white;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .supremenewera {
+        color: white;
+        line-height: 43px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .collabaration {
+        color: white;
+        font-size: 32px;
+        font-weight: 100;
+    }
+    .supr-collab-btn-text {
+        margin: 5% 10% 0 30%;
+        z-index: 20;
+    }
+    .kepka-banner {
+        width: 70%;
+        height: 70%;
+        float: right;
+        margin-top: -6%;
+        margin-right: -6%;
+    }
+    .circle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #5b1f78;
+        float: right;
+        margin-right: 50px;
+        margin-bottom: -50px;
+    }
+}
+@media screen and (min-width: 826px) {
+    .free {
+        margin-top: 100px;
+        width: 100%;
+        height: 29em;
+        overflow: hidden;
+    }
+    .yellow-square {
+        z-index: 1;
+        width: 100%;
+        height: 27em;
+        background-color: #FDDB16;
+        padding: 25px;
+    }
+    .open-catalog {
+        margin-top: 40px;
+        z-index: 30;
+        background-color: #670098;
+        border: 0;
+        size: auto;
+        padding: 15px 25px;
+        border-radius: 17px;
+    }
+    .open-catalog-text {
+        color: white;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .supremenewera {
+        color: white;
+        line-height: 43px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .collabaration {
+        color: white;
+        font-size: 32px;
+        font-weight: 100;
+    }
+    .supr-collab-btn-text {
+        margin: 5% 10% 0 30%;
+        z-index: 20;
+    }
+    .kepka-banner {
+        width: 70%;
+        height: 70%;
+        float: right;
+        margin-top: -10%;
+        margin-right: -3%;
+    }
+    .circle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #5b1f78;
+        float: right;
+        margin-right: 50px;
+        margin-bottom: -50px;
+    }
+}
+@media screen and (min-width: 1026px) {
+    .free {
+        margin-top: 100px;
+        width: 100%;
+        height: 32em;
+        overflow: hidden;
+    }
+    .yellow-square {
+        z-index: 1;
+        width: 100%;
+        height: 30em;
+        background-color: #FDDB16;
+        padding: 25px;
+    }
+    .open-catalog {
+        margin-top: 40px;
+        z-index: 30;
+        background-color: #670098;
+        border: 0;
+        size: auto;
+        padding: 15px 25px;
+        border-radius: 17px;
+    }
+    .open-catalog-text {
+        color: white;
+        font-weight: 500;
+        font-size: 17px;
+    }
+    .supremenewera {
+        color: white;
+        line-height: 43px;
+        font-weight: 900;
+        letter-spacing: 5px;
+    }
+    .collabaration {
+        color: white;
+        font-size: 32px;
+        font-weight: 100;
+    }
+    .supr-collab-btn-text {
+        margin: 5% 10% 0 30%;
+        z-index: 20;
+    }
+    .kepka-banner {
+        width: 70%;
+        height: 70%;
+        float: right;
+        margin-top: -12%;
+    }
+    .circle {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: #5b1f78;
+        float: right;
+        margin-right: 50px;
+        margin-bottom: -50px;
+    }
+}
+
+/*.free {
+margin-top: 100px;
+    width: 100%;
+    height:
+}
+.yellow-square {*/
+/*    z-index: 1;*/
+/*    width: 100%;*/
+/*    height: 30em;*/
+/*    background-color: #FDDB16;*/
+/*    margin-top: 100px;*/
+/*    padding: 25px;*/
+/*}*/
+/*.open-catalog {*/
+/*    margin-top: 40px;*/
+/*    z-index: 30;*/
+/*    background-color: #670098;*/
+/*    border: 0;*/
+/*    size: auto;*/
+/*    padding: 15px 25px;*/
+/*    border-radius: 17px;*/
+/*}*/
+/*.open-catalog-text {*/
+/*    color: white;*/
+/*    font-weight: 500;*/
+/*    font-size: 17px;*/
+/*}*/
+/*.supremenewera {*/
+/*    color: white;*/
+/*    line-height: 43px;*/
+/*    font-weight: 900;*/
+/*    letter-spacing: 5px;*/
+/*}*/
+/*.collabaration {*/
+/*    color: white;*/
+/*    font-size: 32px;*/
+/*    font-weight: 100;*/
+/*}*/
+/*.supr-collab-btn-text {*/
+/*    margin: 5% 10% 0 30%;*/
+/*    z-index: 20;*/
+/*}*/
+/*.kepka-banner {*/
+/*    width: 70%;*/
+/*    height: 70%;*/
+/*    float: right;*/
+/*    margin-top: -12%;*/
+/*}*/
+/*.circle {*/
+/*    width: 75px;*/
+/*    height: 75px;*/
+/*    border-radius: 50%;*/
+/*    background-color: #5b1f78;*/
+/*    float: right;*/
+/*    margin-right: 50px;*/
+/*margin-bottom: -50px;*/
+/*}*/

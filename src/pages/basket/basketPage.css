@@ -1,0 +1,59 @@
+.size {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.size p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.psize {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #847E7E;
+    width: 70px;
+    height: 48px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.pname {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 50px;
+    width: inherit;
+    height: auto;
+    text-align: justify;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 29px;
+
+    color: #000000;
+}
+
+.cap-info__name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.cap-info__brand {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-info {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.buy-cap {
+
+}

@@ -4,8 +4,9 @@ import {productSizes, imgUrls} from "./cap-details-items";
 import TopSellers from "../top-sellers";
 import {NavLink} from "react-router-dom";
 import {CapContext} from "../caps-context";
+import {connect} from "react-redux";
 
-    const CapDetails = ({selectedItemId}) => {
+const CapDetails = ({selectedItemId, }) => {
         const [data, setData] = useState({
 
         })
@@ -32,31 +33,31 @@ import {CapContext} from "../caps-context";
                 </div>
             );
         });
-
-        const [counter, setCounter] = useState(1)
-        const [size, setSize] = useState(0)
         const [active, setActive]= useState('unable')
-        const [cost, setPrice]= useState(0)
+        const [cart, setCart]=useState({
+            brand: data.brand,
+            name: data.name,
+            image: data.image,
+            cost: 0,
+            size: 0,
+            count: 1
+        })
 
-
-        useEffect(()=>{
-            setPrice(data.price)
+         useEffect(()=>{
+            setCart({...cart, cost: data.price, image: data.image, brand: data.brand, name:data.name})
         }, [data])
 
-
         const onIncrease = () => {
-            setCounter(counter+1)
-            setPrice(cost+cost/counter)
+            setCart({...cart, cost: cart.cost+cart.cost/cart.count, count: cart.count+1})
         };
 
         const onDecrease = () => {
-            if (counter>1){
-                setCounter(counter-1)
-                setPrice(cost-cost/counter)
+            if (cart.count>1){
+                setCart({...cart, cost: cart.cost-cart.cost/cart.count, count: cart.count-1})
             }
         };
         const onSetSize =(item)=>{
-            setSize(item)
+            setCart({...cart, size: item})
             }
         const onActive =(name)=>{
             setActive(name)
@@ -77,7 +78,8 @@ import {CapContext} from "../caps-context";
             );
         }
 
-        return (
+
+    return (
             <div className="cap-info">
                 <div className="item-details">
                     <div className="left">
@@ -111,16 +113,16 @@ import {CapContext} from "../caps-context";
                                 <div className="quantity">
                                     <div className="number">
                                         <button className="number-minus" type="button" onClick={onDecrease}>-</button>
-                                        <input type="number" min='0' value={counter} readOnly/>
+                                        <input type="number" min='0' value={cart.count} readOnly/>
                                         <button className="number-plus" type="button" onClick={onIncrease}>+</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="buy-info">
-                            <div className="price">{cost}сом</div>
+                            <div className="price">{cart.cost}сом</div>
                             <div className='btn-box'>
-                                <button className='buy'>Добавить в корзину</button>
+                                <button className='buy' onClick={()=>console.log(cart)}>Добавить в корзину</button>
                             </div>
                         </div>
                     </div>
@@ -135,4 +137,8 @@ import {CapContext} from "../caps-context";
         );
     }
 
-export default CapDetails
+    const mapStateToProps =(state)=>{
+        return state
+    }
+
+export default connect(mapStateToProps)(CapDetails)

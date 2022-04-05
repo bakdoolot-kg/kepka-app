@@ -19,7 +19,8 @@ const BasketForm = () => {
         className='form-info'
         sx={{
           mt: {md: "50px"},
-          mb: {md: "25px"}
+          mb: {md: "25px"},
+          fontWeight: "700"
         }}
       >
         Ваша информация

@@ -1,10 +1,14 @@
 import React from "react";
 import { Box, IconButton, Badge } from "@mui/material";
 import { NavLink } from "react-router-dom";
-
+import {useSelector} from "react-redux";
 import { BasketIcon } from "../../assets";
+import {calcTotalPrice} from "../utils/utils";
 
 const Basket = () => {
+  const items = useSelector(state => state.cart.itemsInCart)
+  const totalPrice = calcTotalPrice(items)
+
   return (
     <Box
       sx={{
@@ -22,7 +26,7 @@ const Basket = () => {
           ml: { xl: 3, lg: 3 },
         }}
       >
-        <Badge badgeContent={5} color="newItem">
+        <Badge badgeContent={items.length} color="newItem">
           <NavLink to="/basket/" color="">
             {/* HERE Basket */}
             <BasketIcon />

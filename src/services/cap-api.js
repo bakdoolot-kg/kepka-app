@@ -31,6 +31,7 @@ export default class CapService {
             name: cap.name,
             price: cap.price,
             brand: cap.brand,
+            size: cap.size
         }
     }
 }

@@ -21,11 +21,11 @@ const CustomRouter = () => {
       <ScrollToTop/>
       <Switch>
         <Route path="/" exact component={HomePage} />
-        <Route path="/catalog/" component={CatalogPage} />
-        <Route path="/basket/" component={BasketPage} />
-        <Route path="/brands/" component={BrandsPage} />
-        <Route path="/about-us/" component={AboutUsPage} />
-        <Route path="/cap-details/:id" render={({ match })=>{
+        <Route path="/catalog/" exact component={CatalogPage} />
+        <Route path="/basket/" exact component={BasketPage} />
+        <Route path="/brands/" exact component={BrandsPage} />
+        <Route path="/about-us/" exact component={AboutUsPage} />
+        <Route path="/catalog/cap-details/:id" exact render={({ match })=>{
           const selectedItemId=match.params.id;
           return <CapDetailsPage selectedItemId={selectedItemId}/>
         }}/>

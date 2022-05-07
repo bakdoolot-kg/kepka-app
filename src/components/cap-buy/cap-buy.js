@@ -1,17 +1,31 @@
 import React from "react";
-import {useDispatch} from "react-redux";
-import {setItemInCart} from "../../redux/cart/reducer";
+import {useDispatch, useSelector} from "react-redux";
+import {deleteItemFromCart, setItemInCart, updateItemInCart} from "../../redux/reducers/cart/reducer";
 import "./cap-buy.css"
 
-export const CapBuy = ({cap}) => {
+const CapBuy = ({cap, children, classname}) => {
   const dispatch = useDispatch()
+  const items = useSelector(state => state.cart.itemsInCart)
+  const isItemInCart = items.some(item => item.id === cap.id)
+  // const isItemInCart = items.some(item => item.name === cap.name)
+  // const isItemInCart = items.filter(item => item.name === cap.name)
+  // const isItemInCart = items.includes(cap.name)
+  // console.log(items.filter(item => item.name === cap.name))
+
   const handleClick = (e) => {
     e.stopPropagation();
-    dispatch(setItemInCart(cap))
+    if (isItemInCart) {
+      dispatch(deleteItemFromCart(cap.id))
+    } else {
+      dispatch(setItemInCart(cap))
+    }
   }
 
   return (
     <div className='cap-buy'>
-      <button className='cap-buy__price' onClick={handleClick}>Добавить в корзину</button>
+      <button className={classname}
+              onClick={handleClick}>{children || isItemInCart ? "Товар добавлен в корзину" : 'Добавить в корзину'}</button>
     </div>)
 }
+
+export default CapBuy

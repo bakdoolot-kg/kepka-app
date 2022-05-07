@@ -1,1 +1,3 @@
- export * from './cap-buy'
+import CapBuy from "./cap-buy";
+
+export default CapBuy

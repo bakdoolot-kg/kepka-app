@@ -1,36 +1,17 @@
 import React, {useState} from 'react'
 import {NavLink} from "react-router-dom";
-import './basketPage.css'
+import {useSelector} from "react-redux";
 import {Box, Button} from "@mui/material";
-import image from './images/img_3.png'
 import {productSizes} from "../../components/cap-details/cap-details-items";
 import BasketForm from "./basketForm";
+import './basketPage.css'
+import CartItem from "../../components/cart-item";
 
 const BasketPage = () => {
-  const [counter, setCounter] = useState(1)
-  const [cost, setPrice] = useState(3200)
-  const [size, setSize] = useState(0)
-  const [active, setActive] = useState('unable')
+  const items = useSelector(state => state.cart.itemsInCart)
 
-  const onIncrease = () => {
-    setCounter(counter + 1)
-    setPrice(cost + cost / counter)
-  };
-  const onDecrease = () => {
-    if (counter > 0) {
-      setCounter(counter - 1)
-      setPrice(cost - cost / counter)
-    }
-  };
-  const onSetSize = (item) => {
-    setSize(item)
-  }
-  const onActive = (name) => {
-    setActive(name)
-
-    if (active === 'active') {
-      setActive('psize')
-    }
+  if (items.length < 1) {
+    return <h2>Корзина пуста</h2>
   }
 
   return (
@@ -56,79 +37,11 @@ const BasketPage = () => {
           borderBottom: '3px solid #847E7E'
         }}>
           <ul className='basket-list'>
-            {/* Здесь будет обьекты (кепка) из store*/}
-            <li>
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  flexDirection: {xs: "column", md: "row"},
-                  pb: "30px"
-                }}
-                className='basket-list__item'
-              >
-
-                <Box sx={{maxWidth: {xs: "25%", md: "15%"}}}><img style={{width: "100%"}} src={image} alt=""/></Box>
-
-                <div className="quantity">
-                  <div className="number">
-                    <button className="number-minus" type="button" onClick={onDecrease}>-</button>
-                    <input type="number" min='0' value={counter} readOnly/>
-                    <button className="number-plus" type="button" onClick={onIncrease}>+</button>
-                  </div>
-                </div>
-
-                <div className="size">
-                  <input
-                    className={active === 'S' ? "active" : active !== 'active' ? 'psize' : 'psize'}
-                    type={"button"}
-                    onClick={() => {
-                      onSetSize(productSizes[0].size);
-                      onActive('S')
-                    }} value={productSizes[0].size}
-                  />
-                   <input
-                    className={active === 'M' ? "active" : active !== 'active' ? 'psize' : 'psize'}
-                    type={"button"}
-                    onClick={() => {
-                      onSetSize(productSizes[1].size);
-                      onActive('M')
-                    }} value={productSizes[1].size}
-                  />
-                   <input
-                    className={active === 'L' ? "active" : active !== 'active' ? 'psize' : 'psize'}
-                    type={"button"}
-                    onClick={() => {
-                      onSetSize(productSizes[2].size);
-                      onActive('L')
-                    }} value={productSizes[2].size}
-                  />
-                  <input
-                    className={active === 'XL' ? "active" : active !== 'active' ? 'psize' : 'psize'}
-                    type={"button"}
-                    onClick={() => {
-                      onSetSize(productSizes[3].size);
-                      onActive('XL')
-                    }} value={productSizes[3].size}
-                  />
-
-                </div>
-
-                <Box
-                  sx={{
-                    textAlign: {xs: "center", md: "left"}
-                  }}
-                  className='cap-info'
-                >
-                  <span className='cap-info__name'>New ERA </span>
-                  <br/>
-                  <span className='cap-info__brand'>black snapback 59 fifty</span>
-                </Box>
-
-                <div className='buy-info'><span className='price'>{cost}сом</span></div>
-              </Box>
-            </li>
+            {items.map(item => (
+              <li>
+                <CartItem key={item.id + item.name} data={item} id={item.id} name={item.name}
+                          brand={item.brand} count={item.count} price={item.cost} size={item.size}/>
+              </li>))}
           </ul>
         </Box>
 
@@ -152,10 +65,14 @@ const BasketPage = () => {
           >
             Купить
           </Button>
+
+          {/*<CapDetail productSizes={productSizes} onDecrease={onDecrease} onIncrease={onIncrease} counter={counter} price={price}/>*/}
         </Box>
       </Box>
     </div>
   );
 }
+
+const mapStateToProps = (state) => ({})
 
 export default BasketPage;

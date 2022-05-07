@@ -14,6 +14,7 @@ const theme = createTheme({
         newItem: {
             main: "#FDDB16",
         },
+        sizeBtnNoActive: {main: '#847E7E'}
     },
     typography: {
         fontFamily: [

@@ -1,123 +1,94 @@
-
-
 .footer {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  /* background-color: rgb(247, 241, 230); */
-}
-.texts {
-  display: flex;
-  margin-top: 57px;
+    align-items: center;
+    margin: 30px 135px 30px;
+    padding: 50px 20px 18px 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.main_title h1 {
+.copyright {
+    font-family: 'Montserrat', sans-serif;
 }
-
-.info_title .number {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 59px;
-  color: #fddb16;
-}
-.text {
-  margin-left: 10px;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  margin-bottom: 2em;
-}
-.info_title {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-right: 50px;
-
-}
-
-
-
 
 .line {
-  height: 1px;
-  width: auto;
-  border-radius: 0px;
-  background: #0a142f;
-  opacity: 0.06;
-  border: 1px solid #0a142f;
-  margin-top: 72px;
+    height: 1px;
+    width: auto;
+    border-radius: 0px;
+    background: #0a142f;
+    opacity: 0.06;
+    border: 1px solid #0a142f;
+    margin-top: 72px;
 }
 
 .end__footer {
-  margin-top: 28px;
-  display: flex;
-  justify-content: space-between;
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .end__footer .custom__caps {
-  font-family: Montserrat, sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #000000;
-  margin-top: 20px;
-  margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .end__footer .end__store {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
-  color: #000000;
-  margin-top: -20px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    margin-top: -20px;
 }
 
 .end__footer img {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .end__footer span h5 {
-  transform: translate(75px, -65px);
+    transform: translate(75px, -65px);
 }
 
 .end__footer span p {
-  transform: translate(75px, -65px);
+    transform: translate(75px, -65px);
 }
 
 .end__footer .copyright {
-  margin-top: 60px;
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
-  color: #0a142f;
-  mix-blend-mode: normal;
-  opacity: 0.65;
+    margin-top: 60px;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #0a142f;
+    mix-blend-mode: normal;
+    opacity: 0.65;
 }
+
 .end__footer .links img {
-  margin: 15px 15px 0 0;
-  border-radius: 50%;
-  transition:all 0.3s;
-  border: 1.5px solid #fff;
+    margin: 15px 15px 0 0;
+    border-radius: 50%;
+    transition: all 0.3s;
+    border: 1.5px solid #fff;
 
 }
+
 .end__footer .links img:hover {
-  background-color: #fddb16;
-  cursor: pointer;
-  transform: scale(1);
-  border: 1.5px solid #0A142F;
+    background-color: #fddb16;
+    cursor: pointer;
+    transform: scale(1);
+    border: 1.5px solid #0A142F;
 
 
 }
+
 .end__footer .custom {
-  display: flex;
+    display: flex;
 }
-.end__footer .cap__store{
-  margin-left: 8px;
+
+.end__footer .cap__store {
+    margin-left: 8px;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 // Components
 import { Header } from "./components";
 
@@ -13,6 +13,7 @@ import {
   CapDetailsPage,
 } from "./pages";
 import ScrollToTop from "./services/scroll-to-top/scroll-to-top";
+import Footer from "./components/footer";
 
 const CustomRouter = () => {
   return (
@@ -30,6 +31,7 @@ const CustomRouter = () => {
           return <CapDetailsPage selectedItemId={selectedItemId}/>
         }}/>
       </Switch>
+      <Footer/>
     </Router>
   );
 };

@@ -1,8 +1,11 @@
 export default class CapService {
-    _apiBase='http://164.92.190.147:8000/api/v1'
+    // _apiBase='http://164.92.190.147:8000/api/v1'
+    _apiBase='http://164.92.190.147:8003/api'
 
-    getResource = async  (url)=>{
+
+      getResource = async  (url)=>{
         const res = await fetch(`${this._apiBase}${url}`)
+          console.log(res, "<<<RES")
         if(! res.ok){
             throw new Error(`Could not fetch ${url}` +
             `, received ${res.status}`)

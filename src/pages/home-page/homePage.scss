@@ -1,0 +1,33 @@
+.home-page__statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texts {
+  display: flex;
+  margin-top: 57px;
+}
+
+.info_title .number {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #fddb16;
+}
+
+.text {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 2em;
+}
+
+.info_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 50px;
+}

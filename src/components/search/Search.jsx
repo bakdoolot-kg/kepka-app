@@ -21,6 +21,7 @@ const Search = (props) => {
           size="small"
           variant="outlined"
           value={value}
+          label="Искать..."
           onChange={onChange}
           InputProps={{
             endAdornment: (

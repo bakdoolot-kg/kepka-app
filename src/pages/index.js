@@ -1,4 +1,4 @@
-export { default as HomePage } from './HomePage';
+export { default as HomePage } from './home-page/HomePage';
 export { default as CatalogPage } from './CatalogPage';
 export { default as BasketPage } from './basket/BasketPage';
 export { default as BrandsPage } from './BrandsPage';

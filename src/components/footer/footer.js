@@ -9,21 +9,6 @@ const Footer = () => {
   return (
     <div className="footer">
         <div className="main_title">
-          <h1>CUSTOM CAPS в цифрах</h1>
-          <div className="texts">
-            <div className="info_title">
-              <p className="number">12000</p>
-              <p className="text">проданных кепок</p>
-            </div>
-            <div className="info_title">
-              <p className="number">9</p>
-              <p className="text">лет на рынке</p>
-            </div>
-            <div className="info_title">
-              <p className="number">8500</p>
-              <p className="text">довольных клиентов</p>
-            </div>
-          </div>
           <div className="line"></div>
           <div className="end__footer">
             <div className="custom">

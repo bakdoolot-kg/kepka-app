@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 const BrandsPage = () => {
   return (
     <div className="brands-page">
-        <Footer/>
+      page brands
     </div>
   );
 }

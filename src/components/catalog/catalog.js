@@ -79,8 +79,7 @@ const Catalog = () => {
             <ItemsInCatalog/>
           </div>
           {/*Исправить пагинацию */}
-          <Pagination defaultCurrent={16} total={50} className="pagination"/>
-          <Footer/>
+          <Pagination defaultCurrent={1} total={50} className="pagination"/>
         </div>
       </div>
     </>

@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Перед началом учти, только yarn!
+## 1. `yarn install`
+## 2. `yarn start`
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

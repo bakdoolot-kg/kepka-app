@@ -1,10 +1,14 @@
-.swiper-card img{
-    width: 218px;
-    height: 218px;
+.swiper-card{
+    max-width: 218px;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
-
 .card-img{
+    max-width: 218px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto 40px;
 }
@@ -35,4 +39,8 @@
     font-size: 18px;
     line-height: 21.94px;
     color: #FDDB16;
+}
+
+@media only screen and (max-width: 1000px) {
+
 }

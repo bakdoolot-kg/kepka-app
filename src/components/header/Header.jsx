@@ -1,17 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {
-  AppBar,
-  Box,
-  IconButton,
-  Toolbar,
-  Typography,
-  Menu,
-  MenuItem,
-  createTheme,
-  Badge,
-  ThemeProvider,
-} from "@mui/material";
+import {AppBar, Box, IconButton, Toolbar, Typography, Menu, MenuItem, ThemeProvider,} from "@mui/material";
 import { Menu as MenuIcon } from "@mui/icons-material";
 
 import { Search, Basket } from "../";

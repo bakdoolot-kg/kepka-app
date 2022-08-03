@@ -1,6 +1,6 @@
 import React from 'react';
-import './top-sellers.css'
 import SwiperForCards from "../swiper-for-cards";
+import './top-sellers.css'
 
 const TopSellers = () => {
    return (

@@ -11,16 +11,130 @@
 
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .dot{
     font-size: 20px;
     color: #FDDB16;
 }
 
-.container{
+.top-sellers .container{
+    max-width: 1250px;
     width: 100%;
-    max-width: 1170px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
+@media only screen and (max-width: 1000px){
+    .top-sellers{
+        margin: 50px 0;
+    }
+    .top-sellers .container{
+        max-width: 810px;
+    }
+    .swiper{
+        max-width: 645px;
+    }
+    .swiper-card{
+        max-width: 155px;
+    }
+    .top-sellers .title{
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    .dot{
+        font-size: 17px;
+    }
+    .arrow-left, .arrow-right{
+        max-width: 21px;
+        max-height: 25px;
+    }
+    .card-img{
+        max-width: 155px;
+        margin-bottom: 28px;
+    }
+    .kepka-brand{
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .kepka-model{
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+    .card-body{
+        max-width: 110px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-sellers{
+        margin: 40px 0 65px;
+    }
+    .top-sellers .container{
+        max-width: 755px;
+    }
+    .swiper{
+        max-width: 565px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .arrow-left, .arrow-right{
+        display: none;
+    }
+    .swiper-scrollbar{
+        display: block;
+    }
+    .card-img{
+        max-width: 137px;
+        margin-bottom: 21px;
+    }
+    .kepka-brand{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .kepka-model{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .kepka-price{
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .top-sellers .title{
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 25px;
+    }
+    .dot{
+        font-size: 14px;
+    }
+    .card-img{
+        max-width: 77px;
+        margin-bottom: 10px;
+    }
+    .card-body{
+        max-width: 80px;
+    }
+    .kepka-brand{
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .kepka-model{
+        font-size: 10px;
+        line-height: 12px;
+        margin: 3px 0;
+    }
+    .kepka-price{
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .swiper-scrollbar{
+        width: 100px;
+    }
+}

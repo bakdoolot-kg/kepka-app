@@ -1,4 +1,5 @@
 .swiper{
+    position: relative;
     max-width: 904px;
 }
 .swiper-inner{
@@ -15,4 +16,19 @@
 
 .arrow-right{
     transform: rotate(180deg);
+}
+
+.swiper-scrollbar{
+    display: none;
+    width: 140px;
+    height: 3px;
+    background: #C4C4C4;
+    border-radius: 2px;
+    margin: 20px auto 0;
+}
+.swiper-scrollbar-drag{
+    height: 5px;
+    border-radius: 2px;
+    background: #555252;
+    top: -1px;
 }
